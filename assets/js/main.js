@@ -148,9 +148,7 @@ $(document).ready(function($) {
                     message: $('#message').val()
                 },
                 function(data) {
-                    document.getElementById('alert').innerHTML = data;
-                    $('#alert').slideDown('slow');
-                    $('#contactform img.contactloader').fadeOut('slow', function() { $(this).remove(); });
+                    $('#contactform').fadeOut('slow', function() { $(this).remove(); });
                     $('#submit').removeAttr('disabled');
                     if (data.match('success') !== null) {
                         $('#name').val('');
