@@ -131,40 +131,40 @@ $(document).ready(function($) {
     Contact Form
     =============================================== */
 
-    $('#contactform').submit(function() {
+    // $('#contactform').submit(function() {
 
-        var action = $(this).attr('action');
+    //     var action = $(this).attr('action');
 
-        $("#alert").slideUp(750, function() {
-            $('#alert').hide();
+    //     $("#alert").slideUp(750, function() {
+    //         $('#alert').hide();
 
-            $('#submit')
-                .after('<img src="../images/ajax-loader.GIF" class="contactloader" />')
-                .attr('disabled', 'disabled');
+    //         $('#submit')
+    //             .after('<img src="../images/ajax-loader.GIF" class="contactloader" />')
+    //             .attr('disabled', 'disabled');
 
-            $.post(action, {
-                    name: $('#name').val(),
-                    email: $('#email').val(),
-                    message: $('#message').val()
-                },
-                function(data) {
-                    document.getElementById('alert').innerHTML = data;
-                    $('#alert').slideDown('slow');
-                    $('#contactform img.contactloader').fadeOut('slow', function() { $(this).remove(); });
-                    $('#submit').removeAttr('disabled');
-                    if (data.match('success') !== null) {
-                        $('#name').val('');
-                        $('#email').val('');
-                        $('#message').val('');
-                    }
-                }
-            );
+    //         $.post(action, {
+    //                 name: $('#name').val(),
+    //                 email: $('#email').val(),
+    //                 message: $('#message').val()
+    //             },
+    //             function(data) {
+    //                 document.getElementById('alert').innerHTML = data;
+    //                 $('#alert').slideDown('slow');
+    //                 $('#contactform img.contactloader').fadeOut('slow', function() { $(this).remove(); });
+    //                 $('#submit').removeAttr('disabled');
+    //                 if (data.match('success') !== null) {
+    //                     $('#name').val('');
+    //                     $('#email').val('');
+    //                     $('#message').val('');
+    //                 }
+    //             }
+    //         );
 
-        });
+    //     });
 
-        return false;
+    //     return false;
 
-    });
+    // });
 
     // Countdown
     // To change date, simply edit: var endDate = "June 26, 2015 20:39:00";
