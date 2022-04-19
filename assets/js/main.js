@@ -128,45 +128,6 @@ $(document).ready(function($) {
 
 
     /* ==============================================
-    Contact Form
-    =============================================== */
-
-    // $('#contactform').submit(function() {
-
-    //     var action = $(this).attr('action');
-
-    //     $("#alert").slideUp(750, function() {
-    //         $('#alert').hide();
-
-    //         $('#submit')
-
-    //         .attr('disabled', 'disabled');
-
-    //         $.post(action, {
-    //                 name: $('#name').val(),
-    //                 email: $('#email').val(),
-    //                 message: $('#message').val()
-    //             },
-    //             function(data) {
-    //                 $('#contactform').fadeOut('slow', function() { $(this).remove(); });
-    //                 $('#submit').removeAttr('disabled');
-    //                 if (data.match('success') !== null) {
-    //                     $('#name').val('');
-    //                     $('#email').val('');
-    //                     $('#message').val('');
-    //                 }
-    //             }
-    //         );
-
-    //     });
-
-    //     return false;
-
-    // });
-
-
-
-    /* ==============================================
     Fade In .back-to-top
     =============================================== */
 
