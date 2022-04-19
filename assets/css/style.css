@@ -1023,7 +1023,7 @@
     /***********************************************************************************************/
     
     .clients-bg {
-        background: url('../images/gallery/33.jpg') center top;
+        background: url('../images/gallery/16.jpg') center top;
         position: relative;
         padding: 60px 0;
     }
@@ -1058,6 +1058,10 @@
         font-size: 25px;
         color: #fff;
         line-height: 30px;
+    }
+    
+    .client-text p .cta:hover {
+        text-decoration: none;
     }
     
     .client a img {
@@ -1868,65 +1872,49 @@
         border-top: 1px solid #EEEEEE;
     }
     
-    ul.footer-social-links {
-        list-style-type: none;
-        padding: 0;
+    .content {
+        height: 50vh;
     }
     
-    ul.footer-social-links li {
+    .footer {
+        padding: 1rem 0;
+        background-color: #000;
+        color: #777;
+    }
+    
+    .footer .footer-site-logo {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    
+    .footer .nav-links li {
+        margin-bottom: 5px;
+    }
+    
+    .footer .nav-links li a {
+        color: gray;
+    }
+    
+    .footer .nav-links li a:hover {
+        color: #fff;
+    }
+    
+    .footer .social li {
         display: inline-block;
-        margin-left: 30px;
     }
     
-    ul.footer-social-links li:first-child {
-        margin: 0;
+    .footer .social li a {
+        font-size: 24px;
+        color: gray;
+        padding: 12px;
     }
     
-    ul.footer-social-links li a {
-        font-size: 17px;
-        color: #4F4F4F;
-        display: block;
-        text-transform: uppercase;
+    .footer .social li a:hover {
+        color: #fff;
     }
     
-    ul.this-nav li a {
-        font-size: 12px;
-        color: #4F4F4F;
-        display: block;
-        text-transform: uppercase;
-    }
-    
-    ul.footer-social-links li a:after {
-        content: "";
-        display: block;
-        left: 0;
-        right: 0;
-        height: 1px;
-        background: #fe8869;
-        opacity: 0;
-        -webkit-transform: translateY(5px);
-        -moz-transform: translateY(5px);
-        -ms-transform: translateY(5px);
-        -o-transform: translateY(5px);
-        transform: translateY(5px);
-        -webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        -ms-transition: all .3s ease;
-        -o-transition: all .3s ease;
-        transition: all .3s ease;
-    }
-    
-    ul.footer-social-links li a:hover:after {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -o-transform: translateY(0);
-        transform: translateY(0);
-    }
-    
-    p.copyright {
-        padding-top: 40px;
+    .footer .copyright {
+        border-top: 1px solid #404040;
     }
     /***********************************************************************************************/
     /* =Back to top */
