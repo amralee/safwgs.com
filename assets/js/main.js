@@ -131,50 +131,39 @@ $(document).ready(function($) {
     Contact Form
     =============================================== */
 
-    $('#contactform').submit(function() {
+    // $('#contactform').submit(function() {
 
-        var action = $(this).attr('action');
+    //     var action = $(this).attr('action');
 
-        $("#alert").slideUp(750, function() {
-            $('#alert').hide();
+    //     $("#alert").slideUp(750, function() {
+    //         $('#alert').hide();
 
-            $('#submit')
+    //         $('#submit')
 
-            .attr('disabled', 'disabled');
+    //         .attr('disabled', 'disabled');
 
-            $.post(action, {
-                    name: $('#name').val(),
-                    email: $('#email').val(),
-                    message: $('#message').val()
-                },
-                function(data) {
-                    $('#contactform').fadeOut('slow', function() { $(this).remove(); });
-                    $('#submit').removeAttr('disabled');
-                    if (data.match('success') !== null) {
-                        $('#name').val('');
-                        $('#email').val('');
-                        $('#message').val('');
-                    }
-                }
-            );
+    //         $.post(action, {
+    //                 name: $('#name').val(),
+    //                 email: $('#email').val(),
+    //                 message: $('#message').val()
+    //             },
+    //             function(data) {
+    //                 $('#contactform').fadeOut('slow', function() { $(this).remove(); });
+    //                 $('#submit').removeAttr('disabled');
+    //                 if (data.match('success') !== null) {
+    //                     $('#name').val('');
+    //                     $('#email').val('');
+    //                     $('#message').val('');
+    //                 }
+    //             }
+    //         );
 
-        });
+    //     });
 
-        return false;
+    //     return false;
 
-    });
+    // });
 
-    // Countdown
-    // To change date, simply edit: var endDate = "June 26, 2015 20:39:00";
-    $(function() {
-        var endDate = "June 26, 2016 20:39:00";
-        $('.soon-countdown .row').countdown({
-            date: endDate,
-            render: function(data) {
-                $(this.el).html('<div><div><span>' + (parseInt(this.leadingZeros(data.years, 2) * 365) + parseInt(this.leadingZeros(data.days, 2))) + '</span><span>days</span></div><div><span>' + this.leadingZeros(data.hours, 2) + '</span><span>hours</span></div></div><div class="lj-countdown-ms"><div><span>' + this.leadingZeros(data.min, 2) + '</span><span>minutes</span></div><div><span>' + this.leadingZeros(data.sec, 2) + '</span><span>seconds</span></div></div>');
-            }
-        });
-    });
 
 
     /* ==============================================
