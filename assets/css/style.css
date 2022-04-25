@@ -1259,9 +1259,10 @@
                     
                     @media screen and (max-width: 640px) {
                         .donatetous {
-                            height: 160vh;
+                            height: 120vh;
                         }
                         .donate {
+                            padding-left: 150px;
                             padding-bottom: 50px;
                         }
                     }
