@@ -1482,7 +1482,8 @@ ul.caption-slides li {
 
 .donatetous {
     background-image: url(../images/sanitary.jpg);
-    height: 100vh;
+    height: 105vh;
+    width: 100vw;
 }
 
 .donate {
@@ -2304,7 +2305,7 @@ textarea.form-control {
         text-align: center;
     }
     .donatetous {
-        height: 160vh;
+        height: 165vh;
     }
     .donate {
         padding-left: 50px;
@@ -2384,7 +2385,7 @@ textarea.form-control {
         margin-bottom: 30px;
     }
     .donatetous {
-        height: 200vh;
+        height: 185vh;
     }
     .donate {
         padding-left: 50px;
