@@ -1354,6 +1354,127 @@ ul.caption-slides li {
 /***********************************************************************************************/
 
 
+/* =Modal Class*/
+
+
+/***********************************************************************************************/
+
+#css-modal {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+    z-index: 10000000;
+}
+
+#css-modal h2 {
+    color: #fc6e51;
+    font-size: 2em;
+    letter-spacing: 0.02em;
+    padding: 0;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+}
+
+#css-modal .css-modal-check {
+    display: none;
+    pointer-events: auto;
+}
+
+#css-modal .css-modal-check:checked~.css-modal {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#css-modal .css-modal {
+    background: #fff;
+    border-radius: 3px;
+    display: inline-block;
+    max-width: 550px;
+    opacity: 0;
+    padding: 2.25em;
+    pointer-events: none;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    white-space: normal;
+    z-index: 1;
+}
+
+#css-modal .css-modal p {
+    text-align: left;
+}
+
+#css-modal .css-modal .close {
+    position: absolute;
+    right: 1em;
+    top: 0.5em;
+}
+
+#css-modal .css-modal .css-modal-btn button {
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-top: 1em;
+}
+
+#css-modal .css-modal-check:checked~#overlay {
+    opacity: 0.8;
+    pointer-events: auto;
+}
+
+#css-modal #overlay {
+    background: #000;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 0.8s;
+}
+
+#css-modal:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.close:after {
+    color: #fc6e51;
+    content: "\0058";
+    float: right;
+    font-size: 1.75em;
+}
+
+#css-modal .btn-primary {
+    color: #fff;
+    background-color: #fc6e51;
+}
+
+#css-modal .btn-primary:hover {
+    background-color: #af2003;
+}
+
+#css-modal .btn {
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0.75em 1.25em;
+    text-align: center;
+}
+
+
+/***********************************************************************************************/
+
+
 /* =Donate*/
 
 
@@ -1361,23 +1482,12 @@ ul.caption-slides li {
 
 .donatetous {
     background-image: url(../images/sanitary.jpg);
-    height: 80vh;
+    height: 100vh;
 }
 
 .donate {
-    padding-top: 40px;
+    padding-top: 70px;
     padding-left: 300px;
-}
-
-@media screen and (max-width: 640px) {
-    .donatetous {
-        height: 120vh;
-    }
-    .donate {
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 30px;
-    }
 }
 
 
@@ -2193,6 +2303,33 @@ textarea.form-control {
     .breadcrumb {
         text-align: center;
     }
+    .donatetous {
+        height: 160vh;
+    }
+    .donate {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+    #css-modal {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 100vw;
+        height: 50vh;
+    }
+    #css-modal h2 {
+        font-size: 1.5em;
+    }
+    #css-modal .css-modal p {
+        font-size: 0.8em;
+    }
+    #css-modal .css-modal .css-modal-btn button {
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        margin-top: 0.3em;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -2246,6 +2383,52 @@ textarea.form-control {
     .about-me h4 a {
         margin-bottom: 30px;
     }
+    .donatetous {
+        height: 200vh;
+    }
+    .donate {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+    #css-modal {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 100vw;
+        height: 30vh;
+    }
+    #css-modal h2 {
+        font-size: 1em;
+    }
+    #css-modal .css-modal p {
+        font-size: 0.5em;
+    }
+    #css-modal .css-modal .css-modal-btn button {
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        margin-top: 0.08em;
+    }
+    #css-modal {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 100vw;
+        height: 30vh;
+    }
+    #css-modal h2 {
+        font-size: 1em;
+    }
+    #css-modal .css-modal p {
+        font-size: 0.5em;
+    }
+    #css-modal .css-modal .css-modal-btn button {
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        margin-top: 0.08em;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -2284,6 +2467,33 @@ textarea.form-control {
     }
     .client img {
         width: 100% !important;
+    }
+    .donatetous {
+        height: 200vh;
+    }
+    .donate {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+    #css-modal {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 100vw;
+        height: 30vh;
+    }
+    #css-modal h2 {
+        font-size: 1em;
+    }
+    #css-modal .css-modal p {
+        font-size: 0.5em;
+    }
+    #css-modal .css-modal .css-modal-btn button {
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        margin-top: 0.08em;
     }
 }
 
