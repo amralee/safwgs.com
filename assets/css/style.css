@@ -1372,6 +1372,10 @@ ul.caption-slides li {
     z-index: 10000000;
 }
 
+.hidden-modal {
+    display: none;
+}
+
 #css-modal h2 {
     color: #fc6e51;
     font-size: 2em;
