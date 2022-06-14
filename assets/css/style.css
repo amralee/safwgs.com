@@ -168,6 +168,10 @@ p {
     border-bottom: 1px solid #EAEAEA;
 }
 
+.bc {
+    background-color: #ffeae6;
+}
+
 
 /***********************************************************************************************/
 
@@ -1086,7 +1090,7 @@ ul.caption-slides li {
     line-height: 30px;
 }
 
-.client-text p .cta:hover {
+.client-text p .rta:hover {
     text-decoration: none;
 }
 
@@ -1215,7 +1219,7 @@ ul.caption-slides li {
     width: 250px;
     margin: 5px;
     box-shadow: #000;
-    background: rgb(255, 255, 255);
+    background: ##ffeae6;
     padding: 20px 10px;
 }
 
@@ -1491,7 +1495,7 @@ ul.caption-slides li {
 
 .service1 i,
 .service1 h4,
-.service1 .cta {
+.service1 .rta {
     color: #fc6e51;
 }
 
@@ -1501,7 +1505,7 @@ ul.caption-slides li {
 
 .service2 i,
 .service2 h4,
-.service2 .cta {
+.service2 .rta {
     color: #3B8A8F;
 }
 
@@ -1511,7 +1515,7 @@ ul.caption-slides li {
 
 .service3 i,
 .service3 h4,
-.service3 .cta {
+.service3 .rta {
     color: #9c42ca;
 }
 
@@ -1519,7 +1523,7 @@ ul.caption-slides li {
     border: 2px solid #9c42ca;
 }
 
-.service .cta span {
+.service .rta span {
     font-size: 0.6rem;
 }
 
@@ -1527,7 +1531,7 @@ ul.caption-slides li {
     flex: 1 1 100%;
 }
 
-.service .cta {
+.service .rta {
     align-self: flex-end;
 }
 
@@ -1805,6 +1809,61 @@ textarea.form-control {
     display: block;
     font-size: 30px;
     margin-bottom: 15px;
+}
+
+
+/*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+
+.cta {
+    background: linear-gradient(rgba(251, 67, 29, 0.9), rgba(251, 67, 29, 0.9)), url("../images/gallery/60.jpg") fixed center center;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.cta h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.cta p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.cta .cta-btn {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.cta .cta-btn:hover {
+    background: #fc6e51;
+    border: 2px solid #fc6e51;
+}
+
+@media (max-width: 1024px) {
+    .cta {
+        background-attachment: scroll;
+    }
+}
+
+@media (min-width: 769px) {
+    .cta .cta-btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
 }
 
 
