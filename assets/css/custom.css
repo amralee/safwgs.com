@@ -1,20 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,900');
 * {
     box-sizing: border-box;
     /* outline:1px solid ;*/
 }
 
 body {
-    background: #ffffff;
-    background: linear-gradient(to bottom, #ffffff 0%, #e1e8ed 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e1e8ed', GradientType=0);
+    background-color: #ffeae6;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.content {
-    padding-top: 55px;
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.30s linear 0s;
 }
 
 .wrapper-1 {
@@ -25,39 +28,67 @@ body {
 }
 
 .wrapper-2 {
-    padding: 30px;
+    /* padding: 30px; */
     text-align: center;
 }
 
-.wrapper-1 .wrapper-2 a {
-    text-decoration: none;
+.wrapper-2>img {
+    padding-bottom: 1.5em;
 }
 
-.thanks {
-    font-family: 'Kaushan Script', cursive;
+h1 {
+    font-family: 'Raleway', Arial Black, Sans-Serif;
     font-size: 4em;
-    line-height: 15px;
+    font-weight: 900;
     letter-spacing: 3px;
+    color: #fafafa;
     margin: 0;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .wrapper-2 p {
     margin: 0;
     font-size: 1.3em;
-    color: #aaa;
-    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
     letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.go-home {
+    background: #fc6e51;
+    border: none;
+    padding: 25px 30px;
+    margin: 30px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.go-home:hover {
+    opacity: 0.9;
+}
+
+.go-home a {
+    font-family: 'Raleway', Arial Black;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 @media (min-width:360px) {
-    .thanks {
+    h1 {
         font-size: 4.5em;
+    }
+    .go-home {
+        margin-bottom: 20px;
     }
 }
 
 @media (min-width:600px) {
-    .content {
+    .thankyoucontent {
         max-width: 1000px;
         margin: 0 auto;
     }
@@ -66,6 +97,5 @@ body {
         max-width: 620px;
         margin: 0 auto;
         margin-top: 50px;
-        box-shadow: 4px 8px 40px 8px rgba(95, 32, 35, 0.5);
     }
 }
